@@ -5,9 +5,9 @@ set -e
 # Note: rh-git218 is needed to run `git -C` in docs build process.
 yum install -y centos-release-scl epel-release
 yum update -y
-yum install -y devtoolset-7-gcc devtoolset-7-gcc-c++ devtoolset-7-binutils java-1.8.0-openjdk-headless rsync \
-    rh-git218 wget unzip which make cmake3 patch ninja-build devtoolset-7-libatomic-devel openssl python27 \
-    libtool autoconf tcpdump
+yum install -y devtoolset-8-gcc devtoolset-8-gcc-c++ devtoolset-8-binutils java-1.8.0-openjdk-headless rsync \
+    rh-git218 wget unzip which make cmake3 patch ninja-build devtoolset-8-libatomic-devel openssl python27 \
+    libtool autoconf tcpdump devtoolset-8-libstdc++-devel
 
 ln -s /usr/bin/cmake3 /usr/bin/cmake
 ln -s /usr/bin/ninja-build /usr/bin/ninja
